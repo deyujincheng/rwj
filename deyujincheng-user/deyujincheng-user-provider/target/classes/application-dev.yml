@@ -1,0 +1,26 @@
+spring:
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    # 开发禁用缓存
+    cache: false
+  datasource:
+    url: jdbc:mysql://192.168.15.244:3306/doctor?characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: lonch
+    password: lonch@123
+    # 可省略驱动配置, sprin-boot 会由url检测出驱动类型
+    # driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-timeout: 60000
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: cn.boot.domain
+# spring-boot默认打印输出info级别以上的，可在此处修改输出级别
+logging:
+  level:
+    root: info
+server:
+  port: 9090
+
+

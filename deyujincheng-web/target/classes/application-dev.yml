@@ -1,0 +1,20 @@
+swagger:
+  title: deyujincheng
+  description: rwj
+
+#端口号
+server:
+  port: 9091
+
+#注册中心配置
+dubbo:
+  application:
+    name: deyujincheng
+    owner: deyujincheng
+    organization: rwj
+    consumer:
+      check: false
+      mock: true
+  registry:
+    name: zookeeper
+    address: 192.168.15.225:2181

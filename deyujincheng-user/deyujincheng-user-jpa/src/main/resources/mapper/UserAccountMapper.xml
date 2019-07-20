@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rwj.mapper.UserAccountMapper">
+    <resultMap id="BaseResultMap" type="com.rwj.entity.UserAccount">
+        <id column="ID" property="id" />
+        <result column="ACCOUNT_ID" property="accountId"/>
+        <result column="LOGIN_TYPE" property="loginType" />
+        <result column="LOGIN_NAME" property="loginName"/>
+        <result column="PASSWORD" property="password"/>
+        <result column="STATUS_CODE" property="statusCode"/>
+        <result column="SOURCE_CODE" property="sourcesCode"/>
+        <result column="CREATE_TIME" property="createTime"/>
+        <result column="UPDATE_TIME" property="updateTime"/>
+    </resultMap>
+    <!-- 查询单条记录 -->
+    <select id="selectById" parameterType="com.rwj.entity.UserAccount" resultMap="BaseResultMap">
+        SELECT * FROM user_account WHERE id = #{id}
+    </select>
+</mapper>
