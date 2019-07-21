@@ -38,4 +38,22 @@ public class TestController {
         result.setData(dto);
         return result;
     }
+
+    @ApiOperation(value = "提交测试", notes = "暂无")
+    @RequestMapping(value = "/getUser", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
+    @ApiResponses({
+            @ApiResponse(code = 2000000, message = "操作成功"),
+            @ApiResponse(code = 1111111, message = "系统异常"),
+            @ApiResponse(code = 2222222, message = "必填项为空，请检查"),
+            @ApiResponse(code = 3333333, message = "数据格式有误，请检查"),
+            @ApiResponse(code = 4444444, message = "系统繁忙，请重试"),
+    })
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id", value = "用户表ID主键", required = true, dataType = "String", paramType = "query")})
+    public ResponseDataModel getUser(String id){
+        ResponseDataModel result = ResponseDataModel.success();
+        UserAccountDTO dto = remoteUserAccountService.getById(id);
+        result.setData(dto);
+        return result;
+    }
 }
