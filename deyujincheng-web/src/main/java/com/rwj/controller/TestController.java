@@ -33,6 +33,7 @@ public class TestController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id", value = "用户表ID主键", required = true, dataType = "String", paramType = "query")})
     public ResponseDataModel getUserById(String id){
+
         ResponseDataModel result = ResponseDataModel.success();
         UserAccountDTO dto = remoteUserAccountService.getById(id);
         result.setData(dto);

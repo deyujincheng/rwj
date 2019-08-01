@@ -104,6 +104,7 @@ public class UserAccount {
         this.loginType = loginType;
     }
 
+
     @Override
     public String toString() {
         return "UserAccount{" +

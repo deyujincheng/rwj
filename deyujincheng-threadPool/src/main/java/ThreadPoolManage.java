@@ -42,6 +42,5 @@ public class ThreadPoolManage {
             System.out.println("耗时：" + (System.currentTimeMillis() - currentTimeMillis));
         }
 
-
     }
 }
