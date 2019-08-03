@@ -17,5 +17,5 @@ http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
 	<!-- ******************************用户管理****************************** -->
 	<!-- 账户管理 -->
-	<dubbo:reference id="remoteUserAccountService" interface="com.rwj.api.RemoteUserAccountServiceccbbdf"/>
+	<dubbo:reference id="remoteUserAccountService" interface="com.rwj.api.RemoteUserAccountServiceccbbdM"/>
 </beans>
