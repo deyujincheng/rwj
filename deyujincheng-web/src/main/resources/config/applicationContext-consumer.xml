@@ -13,8 +13,9 @@ http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
 	<!--关闭服务消费方所有服务的启动检查。dubbo缺省会在启动时检查依赖的服务是否可用，不可用时会抛出异常，阻止Spring初始化完成。-->
 	<dubbo:consumer check="false" />
+	
 
 	<!-- ******************************用户管理****************************** -->
 	<!-- 账户管理 -->
-	<dubbo:reference id="remoteUserAccountService" interface="com.rwj.api.RemoteUserAccountService"/>
+	<dubbo:reference id="remoteUserAccountService" interface="com.rwj.api.RemoteUserAccountServiceb"/>
 </beans>
