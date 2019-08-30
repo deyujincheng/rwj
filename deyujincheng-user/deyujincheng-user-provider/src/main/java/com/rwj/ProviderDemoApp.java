@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 
 @SpringBootApplication
-@ImportResource({ "classpath:config/*.xml","classpath:mapper/*.xml"})
+@ImportResource({ "classpath:config/*.xml"})
 @ComponentScan(basePackages = {"com.rwj"})
 @MapperScan("com.rwj.mapper") //扫描的mapper
 public class ProviderDemoApp {

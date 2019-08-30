@@ -13,8 +13,7 @@
                        organization="rwj"/>
 
     <!-- 配置zookeeper注册中心地址 -->
-    <dubbo:registry protocol="zookeeper" address="192.168.15.225:2181"
-                    file="/data/output/zookeeper.cache"/>
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2183"/>
 
     <!-- 服务端设置 -->
     <dubbo:provider timeout="5000"

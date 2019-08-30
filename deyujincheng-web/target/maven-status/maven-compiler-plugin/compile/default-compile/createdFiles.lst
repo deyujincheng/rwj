@@ -1,4 +1,5 @@
-com\rwj\controller\TestController.class
-com\rwj\swagger\SwaggerConfig.class
-com\rwj\ConsumerDemoApp.class
-com\rwj\swagger\WebConfig.class
+com/rwj/swagger/WebConfig.class
+com/rwj/ConsumerDemoApp.class
+com/rwj/test/Test.class
+com/rwj/swagger/SwaggerConfig.class
+com/rwj/controller/TestController.class
