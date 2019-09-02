@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * @author chichenglong
  * @date 2019/6/20 16:28
@@ -18,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(value = "ccl", tags={"测试-测试"})
 public class TestController {
 
-    @Autowired
+    @Resource
     private RemoteUserAccountService remoteUserAccountService;
 
     @ApiOperation(value = "测试", notes = "暂无")

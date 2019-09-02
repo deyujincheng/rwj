@@ -34,4 +34,10 @@
                    actives="100"
                    loadbalance="roundrobin"/>
 
+    <!-- 动态内容管理 -->
+    <dubbo:service interface="com.rwj.api.RemotePostContentService"
+                   ref="remotePostContentService"
+                   retries="-1"
+                   actives="100"
+                   loadbalance="roundrobin"/>
 </beans>

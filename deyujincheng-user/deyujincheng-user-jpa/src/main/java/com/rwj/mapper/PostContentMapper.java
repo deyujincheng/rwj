@@ -1,5 +1,6 @@
 package com.rwj.mapper;
 
+import com.rwj.entity.PostContent;
 import com.rwj.entity.UserAccount;
 import org.mapstruct.Mapper;
 import org.springframework.stereotype.Repository;
@@ -10,7 +11,10 @@ import org.springframework.stereotype.Repository;
  */
 @Mapper
 @Repository
-public interface UserAccountMapper {
+public interface PostContentMapper {
 
-    UserAccount selectById(String id);
+    PostContent selectById(int id);
+
+    void insert(PostContent postContent);
+
 }
