@@ -25,7 +25,7 @@
         <!-- commons-lang -->
         <commons-lang.version>2.6</commons-lang.version>
         <!-- junit -->
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <!-- xdhpx-config -->
         <config.version>1.0.8.RELEASE</config.version>
         <!-- xdhpx-tools -->
