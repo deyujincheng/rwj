@@ -17,7 +17,7 @@
         <!-- SpringBoot相关 -->
         <springBoot.version>2.1.5.RELEASE</springBoot.version>
         <!-- dubbo + zookeeper-->
-        <dubbo.version>2.6.4</dubbo.version>
+        <dubbo.version>2.6.9</dubbo.version>
         <zookeeper.version>3.4.6</zookeeper.version>
         <zkclient.version>0.1</zkclient.version>
         <!-- json -->
